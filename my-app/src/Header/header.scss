@@ -1,5 +1,7 @@
 .header-wrapper {
-  background: #e8d67d;
+  background: linear-gradient(45deg, #706991, #F8CDDA);
+  animation: gradient 10s ease infinite;
+  background-size: 150% 150%;
 }
 .header-left {
   display: flex;
@@ -15,4 +17,24 @@
 }
 .header-padding {
   padding: 13px 20px 17px 20px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0, 50%;
+  }
+  50% {
+    background-position: 100%, 50% ;
+  }
+  100% {
+    background-position: 0, 50%;
+  }
+}
+.header-hover {
+  transition: 0.15s;
+  border-radius: 5px;
+}
+.header-hover:hover {
+  color: #dbd8d8;
+  background: #9f6a88;
+  cursor: pointer;
 }
